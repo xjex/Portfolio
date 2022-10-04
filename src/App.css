@@ -2,6 +2,27 @@
   text-align: center;
 }
 
+.App #Head {
+  background-color: #3c465a;
+  text-align: center;
+  height: 500px;
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.App #Head h1 {
+  padding-top: 220px;
+  color: azure;
+  letter-spacing: 5px;
+}
+
+.App #Head p,
+h2 {
+  color: azure;
+  letter-spacing: 2px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
