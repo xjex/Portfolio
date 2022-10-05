@@ -17,6 +17,7 @@ const EmailPage = () => {
         (result) => {
           console.log(result.text);
           document.getElementById("emailmeform").reset();
+          alert("");
         },
         (error) => {
           console.log(error.text);

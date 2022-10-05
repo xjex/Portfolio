@@ -3,6 +3,10 @@ import { FiGithub } from "react-icons/fi";
 import { FiFacebook } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
+
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+
 const Page = () => {
   return (
     <div id="Head">
