@@ -2,17 +2,20 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-
+import resume from "../data/Xavier-Joseph-Manaloto.pdf";
 function ColorSchemesExample() {
   return (
     <>
-      <Navbar bg="light" variant="light">
+      <Navbar bg="light" variant="light" sticky="top">
         <Container>
-          <Navbar.Brand href="#home"></Navbar.Brand>
-          <Nav className="me-auto">
+          <Navbar.Brand href="#home">XJ|Manaloto</Navbar.Brand>
+
+          <Nav className="justify-content-end">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="#features">About Me</Nav.Link>
+            <Nav.Link href={resume} download="MyResume.pdf">
+              Download my Portfolio
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>

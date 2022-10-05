@@ -11,14 +11,47 @@
   display: block;
 }
 
-.App #Head h1 {
-  padding-top: 220px;
-  color: azure;
-  letter-spacing: 5px;
+/* -----------------blinking------------------- */
+.App #pad {
+  padding-top: 150px;
+}
+.App #typing h1 {
+  color: #fff;
+  width: 17.5ch;
+  animation: typing 2s steps(18) 2s 1 normal both,
+    blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.1em solid orange;
+  letter-spacing: 0.1em;
+  font-size: 2em;
+  margin: 0 auto;
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: rgba(252, 252, 252, 0.75);
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+/* -----------------blinking------------------- */
 .App #Head p,
-h2 {
+.App #Head h2 {
   color: azure;
   letter-spacing: 2px;
 }
@@ -56,4 +89,8 @@ h2 {
   to {
     transform: rotate(360deg);
   }
+}
+
+.App .Email {
+  color: #282c34;
 }
